@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <parameter name="capital" value="Kiev" />
+    <parameter name="country" value="Ukraine" />
+
+    <test name="All">
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <exclude name="third"  />-->
+<!--                <include name="dependency"  />-->
+<!--                <include name="setup/teardown"  />-->
+<!--            </run>-->
+<!--        </groups>-->
+
+        <classes>
+            <class name="com.example.tests.TestParameters"/>
+        </classes>
+    </test>
+
+</suite>
