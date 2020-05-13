@@ -4,15 +4,18 @@
     <parameter name="capital" value="Kiev" />
     <parameter name="country" value="Ukraine" />
 
-    <test name="All">
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <exclude name="third"  />-->
-<!--                <include name="dependency"  />-->
-<!--                <include name="setup/teardown"  />-->
-<!--            </run>-->
-<!--        </groups>-->
+    <test name="TestWithGroups">
+        <classes>
+            <class name="com.example.tests.TestWithGroups">
+                <methods>
+                    <exclude name="third"/>
+                </methods>
+            </class>
+        </classes>
 
+    </test>
+
+    <test name="TestParameters">
         <classes>
             <class name="com.example.tests.TestParameters"/>
         </classes>
